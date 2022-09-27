@@ -1,0 +1,89 @@
+//01. https://github.com/rvsp/typescript-oops/blob/master/Practice/Movie.md
+
+class movie {
+    
+    constructor(title,studio,rating){
+        this.title=title;
+        this.studio=studio;
+        this.rating=rating;
+    }
+    
+    getPG(){
+        return this.rating;
+    }    
+}
+
+var m = new movie ("Casino Royale","Eon Productions","PG­13");
+console.log(m.getPG());
+---------------------------------------------------------------------------------------------------
+
+//02. https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
+
+class Circle {
+    
+    constructor (radius,color){
+        this.radius=radius;
+        this.color=color;
+    }
+
+    getRadius() {
+        return this.radius.toFixed(2);
+    }
+    
+    getColor() {
+        return this.color;
+    }
+    to_string() {
+        return "Circle [radius=" + this.radius + ",color=" + this.color +"]";
+    }
+    
+    getArea()
+    {
+        return(this.radius *this.radius*Math.PI).toFixed(2);
+    }
+    
+    getCircumference()
+    {
+        return(2 *Math.PI*this.radius).toFixed(2);
+    } 
+    }
+    
+    var result=new Circle(1.0,"red");
+    
+    console.log(result.getRadius(),result.getColor(),
+    result.getArea(),result.getCircumference(),result.to_string());
+---------------------------------------------------------------------------------------------------		
+
+//03. Write a “person” class to hold all the details.
+class person {
+
+  constructor(name,age,gender,dob,address){
+	  this.name=name;
+	  this.age=age;
+	  this.gender=gender;
+	  this.contact_no=contact_no;
+	  this.address=address;
+  
+  }
+} 
+var c1=new person (10,23,"male",9786353801,"chennai");
+console.log(c1.name*c1.age);
+//venkatesh
+---------------------------------------------------------------------------------------------------
+
+//04. write a class to calculate the uber price.
+
+class Uber{
+  
+      constructor(distance_km,amount_per_km){
+        
+          this.amount_per_km =amount_per_km;
+          this.distance_km = distance_km;
+      }
+      total_amount(){
+        
+          return this.amount_per_km * this.distance_km;
+      }
+  }  
+  var res = new Uber(20,10);
+  console.log(res.total_amount());
