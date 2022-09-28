@@ -29,9 +29,15 @@ class Circle {
     getRadius() {
         return this.radius.toFixed(2);
     }
-    
+    setRadius(radius){
+        this.radius=radius;
+    }
+
     getColor() {
         return this.color;
+    }
+    setColor(color){
+        this.color=color;
     }
     to_string() {
         return "Circle [radius=" + this.radius + ",color=" + this.color +"]";
@@ -47,11 +53,15 @@ class Circle {
         return(2 *Math.PI*this.radius).toFixed(2);
     } 
     }
+    var result=new Circle();
+    result.setRadius(1.0);
+    result.setColor("red");
     
-    var result=new Circle(1.0,"red");
-    
+
     console.log(result.getRadius(),result.getColor(),
     result.getArea(),result.getCircumference(),result.to_string());
+	
+// output : 1.00 red 3.14 6.28 Circle [radius=1,color=red]
 ---------------------------------------------------------------------------------------------------		
 
 //03. Write a “person” class to hold all the details.
