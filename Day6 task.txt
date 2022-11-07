@@ -67,18 +67,19 @@ class Circle {
 //03. Write a “person” class to hold all the details.
 class person {
 
-  constructor(name,age,gender,dob,address){
-	  this.name=name;
-	  this.age=age;
-	  this.gender=gender;
-	  this.contact_no=contact_no;
-	  this.address=address;
+  constructor(name,age,gender,contact_no,address){
+      this.name=name;
+      this.age=age;
+      this.gender=gender;
+      this.contact_no=contact_no;
+      this.address=address;
   
   }
 } 
-var c1=new person (10,23,"male",9786353801,"chennai");
-console.log(c1.name*c1.age);
+var c1=new person ("venkatesh",23,"male",9786353801,"chennai");
+console.log(c1.name);
 //venkatesh
+
 ---------------------------------------------------------------------------------------------------
 
 //04. write a class to calculate the uber price.
